@@ -9,10 +9,12 @@ def rename_files_incrementally(directory):
     files = [f for f in files if os.path.isfile(os.path.join(directory, f))]
 
     # Sort files if needed
+#     print(files[:5])
     files.sort()
-
+#     print(files[:5])
+#     quit()
     # Rename each file
-    for index, file in enumerate(files, start=409):
+    for index, file in enumerate(files, start=1):
         # Get the file extension
         file_extension = os.path.splitext(file)[1]
         if not file.startswith("Screenshot"):
@@ -31,5 +33,5 @@ def rename_files_incrementally(directory):
 
 
 # Example usage:
-# directory = "/Users/mac/Documents/Damn/Development/js/chfi/images/"
-# rename_files_incrementally(directory)
+directory = "/home/legion/Pictures/Screenshots/chfi/"
+rename_files_incrementally(directory)
