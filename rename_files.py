@@ -33,5 +33,5 @@ def rename_files_incrementally(directory):
 
 
 # Example usage:
-directory = "/home/legion/Pictures/Screenshots/chfi/"
+directory = "/home/legion/Documents/Legion/Development/js/chfi-v11-best-approach/images/CHFIDumpInUse/"
 rename_files_incrementally(directory)
